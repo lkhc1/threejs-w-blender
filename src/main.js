@@ -41,7 +41,7 @@ scene.add(light);
 
 
 // =====================
-// 5. 测试物体（关键！判断是否正常）
+// 5. 测试物体
 // =====================
 const testCube = new THREE.Mesh(
   new THREE.BoxGeometry(0.5, 0.5, 0.5),
@@ -61,7 +61,7 @@ console.log("开始加载 GLB...");
 
 
 loader.load(
-  "./pearl.glb", // ⚠️ 确保和 index.html 同级
+  "./pearl.glb", //
   function (gltf) {
     console.log("✅ GLB 加载成功");
 
